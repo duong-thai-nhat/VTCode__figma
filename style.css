@@ -97,12 +97,17 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 80px;
     background-color: var(--color-white);
     overflow: hidden;
+    z-index: 99999;
 }
 
 #header .navbar{
@@ -227,7 +232,7 @@ h1, h2, h3, h4, h5, h6{
 .slider__customer__divide-bottom{
     margin-bottom: 41px;
     height: 1px;
-    background-image: linear-gradient(#4E92F9 0%,#C381DB 40%,#4E92F9 0%);
+    background: linear-gradient(#4E92F9 0%,#C381DB 40%,#4E92F9 0%);
 }
 
 
@@ -642,6 +647,10 @@ h1, h2, h3, h4, h5, h6{
     height: 36px;
 }
 
+.footer__input__email input{
+    color: #A2BDE5;
+}
+
 .footer__copy__right{
     display: flex;
     justify-content: space-between;
@@ -651,12 +660,29 @@ h1, h2, h3, h4, h5, h6{
     padding-right: 0;
 }
 
+.footer__chevron__right{
+    border: 1px solid #137DB7;
+    border-radius: 47px;
+}
+
+.footer__chevron__right__icon{
+    padding: 7px 10px 7px 10px;
+}
+
 .copy__right{
     display: flex;
 }
 
 .copy__right__text:nth-child(2){
     padding: 0 10px;
+}
+
+.copy__right__text:nth-child(3){
+    font-weight: 700;
+}
+
+.create__by__text{
+    font-weight: 700;
 }
 /* // footer */
 
