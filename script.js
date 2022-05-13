@@ -14,14 +14,12 @@ buttonGroup.addEventListener( 'click', function( event ) {
 });
 
 
-
-// external js: flickity.pkgd.js
-
 var flkty1 = new Flickity('#team .carousel');
 
 var buttonGroup1 = document.querySelector('#team .carousel');
 
 buttonGroup1.addEventListener( 'click', function( event ) {
+
   // filter for button clicks
   if ( !matchesSelector( event.target, '.team-carousel-cell-modal' ) ) {
     return;
@@ -29,4 +27,5 @@ buttonGroup1.addEventListener( 'click', function( event ) {
   var selector1 = event.target.getAttribute('data-selector');
   flkty1.selectCell( selector1 );
 });
+
 

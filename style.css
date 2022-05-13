@@ -211,6 +211,10 @@ h1, h2, h3, h4, h5, h6{
     margin: 40px 0;
 }
 
+.slider__customer__item{
+    margin-top: 10px;
+}
+
 .slider__customer__img{
     height: 50px;
 }
@@ -222,13 +226,13 @@ h1, h2, h3, h4, h5, h6{
 .slider__customer__divide-top{
     margin-top: 70px;
     height: 1px;
-    background-image: linear-gradient(#4E92F9 0%,#C381DB 40%,#4E92F9 0%);
+    background-image: linear-gradient(to right ,transparent, rgb(233, 232, 232), transparent);
 }
 
 .slider__customer__divide-bottom{
     margin-bottom: 41px;
     height: 1px;
-    background: linear-gradient(#4E92F9 0%,#C381DB 40%,#4E92F9 0%);
+    background-image: linear-gradient(to right ,transparent, rgb(233, 232, 232), transparent);
 }
 
 
@@ -367,6 +371,11 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.project__content__img:hover{
+    transform: scale(110%);
+    transition: all 0.35s linear;
 }
 
 .project__content__img:last-child{
@@ -781,6 +790,28 @@ h1, h2, h3, h4, h5, h6{
     .slider__content__img{
         width: 100%;
     }
+
+    .project__content__item{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .project__content__wrap .row > div:nth-child(2) .project__content__item{
+        flex-direction: column-reverse;
+    }
+
+    .project__content__img{
+        padding-top: 23.05px;
+    }
+
+    #footer{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #footer .contact__form__input__text{
+        max-width: 300px;
+    }
 }
 
 @media (max-width: 1140px){
@@ -823,12 +854,35 @@ h1, h2, h3, h4, h5, h6{
         min-width: unset;
         max-width: unset;
     }
+
+    .carousel-cell{
+        width: 100%;
+    }
+
+    .flickity-button {
+        display: block;
+    }
+
+    #footer{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 @media (max-width: 500px){
+    #footer{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
     .slider__content__text__heading{
         font-size: 42px;
         line-height: unset;
+    }
+
+    .footer__copy__right{
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -836,5 +890,10 @@ h1, h2, h3, h4, h5, h6{
     .slider__content__text__heading{
         font-size: 32px;
         line-height: unset;
+    }
+
+    .copy__right{
+        flex-direction: column;
+        align-items: center;
     }
 }
