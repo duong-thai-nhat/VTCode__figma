@@ -749,7 +749,7 @@ h1, h2, h3, h4, h5, h6{
   height: unset;
   margin-right: 10px;
   /* background: #8C8; */
-  /* counter-increment: gallery-cell; */
+  /* counter-increment: carousel-cell; */
 }
 
 .carousel-cell:not(.is-selected) .service__slider__item{
