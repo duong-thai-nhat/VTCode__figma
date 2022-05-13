@@ -1,14 +1,32 @@
-// var flkty = new Flickity('.carousel');
+// external js: flickity.pkgd.js
 
-// var buttonGroup = document.querySelector('.carousel');
-// var buttons = buttonGroup.querySelectorAll('.carousel-cell');
-// buttons = fizzyUIUtils.makeArray( buttons );
+var flkty = new Flickity('#service .carousel');
 
-// buttonGroup.addEventListener( 'click', function( event ) {
-//   // filter for button clicks
-//   if ( !matchesSelector( event.target, '.carousel-cell' ) ) {
-//     return;
-//   }
-//   var index = buttons.indexOf( event.target );
-//   flkty.select( index );
-// });
+var buttonGroup = document.querySelector('#service .carousel');
+
+buttonGroup.addEventListener( 'click', function( event ) {
+  // filter for button clicks
+  if ( !matchesSelector( event.target, '.service-carousel-cell-modal' ) ) {
+    return;
+  }
+  var selector = event.target.getAttribute('data-selector');
+  flkty.selectCell( selector );
+});
+
+
+
+// external js: flickity.pkgd.js
+
+var flkty1 = new Flickity('#team .carousel');
+
+var buttonGroup1 = document.querySelector('#team .carousel');
+
+buttonGroup1.addEventListener( 'click', function( event ) {
+  // filter for button clicks
+  if ( !matchesSelector( event.target, '.team-carousel-cell-modal' ) ) {
+    return;
+  }
+  var selector1 = event.target.getAttribute('data-selector');
+  flkty1.selectCell( selector1 );
+});
+
