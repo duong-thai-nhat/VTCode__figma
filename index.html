@@ -17,30 +17,61 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="header__wrap">
-                        <nav class="navbar navbar-expand-lg navbar-light">
+                      <!-- <nav class="navbar navbar-expand-lg bg-light">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#">Navbar</a>
                           <div class="logo">
-                              <img src="./assets/img/Logo_Only_209px-02 1.png" alt="" class="logo__img">
+                            <img src="./assets/img/Logo_Only_209px-02 1.png" alt="" class="logo__img">
                           </div>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Về chúng tôi</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Dịch vụ</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Dự án</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Liên hệ</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav> -->
+
+                        <nav class="navbar navbar-expand-lg navbar-light">
                           <div class="container-fluid">
+                            <div class="logo">
+                                <img src="./assets/img/Logo_Only_209px-02 1.png" alt="" class="logo__img">
+                            </div>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                               <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
+                            <div class="header__navbar collapse navbar-collapse" id="navbarNav">
                               <ul class="navbar-nav">
                                 <li class="nav-item">
-                                  <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                                  <a class="nav-link active scrollto" aria-current="page" href="#">Trang chủ</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">Về chúng tôi</a>
+                                  <a class="nav-link scrollto" href="#">Về chúng tôi</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#service">Dịch vụ</a>
+                                  <a class="nav-link scrollto" href="#service">Dịch vụ</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#project">Dự án</a>
+                                  <a class="nav-link scrollto" href="#project">Dự án</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#contact">Liên hệ</a>
+                                  <a class="nav-link scrollto" href="#contact">Liên hệ</a>
                                 </li>
                               </ul>
                             </div>
@@ -135,7 +166,8 @@
             <div class="service__wrap">
               <div class="service__heading text-center">
                 <h3 class="heading">Dịch Vụ</h3>
-                <p class="sub-heading">Chúng tôi cung cấp dịch vụ - giải pháp tốt nhất, 
+                <p class="sub-heading">
+                  Chúng tôi cung cấp dịch vụ - giải pháp tốt nhất, 
                   toàn diện nhất dành cho cá nhân, tổ chức doanh nghiệp.
                 </p>
               </div>
@@ -144,7 +176,7 @@
 
               <!-- Flickity HTML init -->
               <!-- data-flickity data-flickity-options='{ "prevNextButtons": false, "pageDots": false, "wrapAround": true }' -->
-              <div class="carousel">
+              <div class="carousel" data-flickity='{ "wrapAround": true }'>
                 <div class="carousel-cell cell1" data-selector=".cell1">
                   <div class="service__slider__item">
                     <div class="service-carousel-cell-modal cell1" data-selector=".cell1"></div>
@@ -308,20 +340,98 @@
                         <div class="row">
                           <div class="col-xl-4">
                             <div class="project__content__item">
-                              <img src="./assets/img/project/thi-cong-datacenter-1.png" alt="" class="project__content__img">
-                              <img src="./assets/img/project/he-thong-mang-cty-tan-hung-thai-367x367.png" alt="" class="project__content__img">
+                              <div class="project__content__container__image">
+                                <img src="./assets/img/project/thi-cong-datacenter-1.png" alt="" class="project__content__img">
+                                <div class="project__content__item__text">
+                                  <div class="project__content__text__container__header">
+                                    <h3 class="project__content__text__header">ICool</h3>
+                                  </div>
+                                  <div class="project__content__text__container__param">
+                                    <p class="project__content__text__param">
+                                      Đối tác, khách hàng quen thuộc nhất với chúng tôi
+                                      <a href="" class="project__content__link">Xem chi tiết</a>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project__content__container__image">
+                                <img src="./assets/img/project/he-thong-mang-cty-tan-hung-thai-367x367.png" alt="" class="project__content__img">
+                                <div class="project__content__item__text">
+                                  <div class="project__content__text__container__header">
+                                    <h3 class="project__content__text__header">ICool</h3>
+                                  </div>
+                                  <div class="project__content__text__container__param">
+                                    <p class="project__content__text__param">
+                                      Đối tác, khách hàng quen thuộc nhất với chúng tôi
+                                      <a href="" class="project__content__link">Xem chi tiết</a>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="col-xl-4">
                             <div class="project__content__item">
-                              <img src="./assets/img/project/Rectangle 43.png" alt="" class="project__content__img">
-                              <img src="./assets/img/project/booth-icool-367x367.png" alt="" class="project__content__img">
+                              <div class="project__content__container__image">
+                                <img src="./assets/img/project/Rectangle 43.png" alt="" class="project__content__img">
+                                <div class="project__content__item__text">
+                                  <div class="project__content__text__container__header">
+                                    <h3 class="project__content__text__header">ICool</h3>
+                                  </div>
+                                  <div class="project__content__text__container__param">
+                                    <p class="project__content__text__param">
+                                      Đối tác, khách hàng quen thuộc nhất với chúng tôi
+                                      <a href="" class="project__content__link">Xem chi tiết</a>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project__content__container__image">
+                                <img src="./assets/img/project/booth-icool-367x367.png" alt="" class="project__content__img">
+                                <div class="project__content__item__text">
+                                  <div class="project__content__text__container__header">
+                                    <h3 class="project__content__text__header">ICool</h3>
+                                  </div>
+                                  <div class="project__content__text__container__param">
+                                    <p class="project__content__text__param">
+                                      Đối tác, khách hàng quen thuộc nhất với chúng tôi
+                                      <a href="" class="project__content__link">Xem chi tiết</a>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="col-xl-4">
                             <div class="project__content__item">
-                              <img src="./assets/img/project/software-developer.png" alt="" class="project__content__img">
-                              <img src="./assets/img/project/image 3.png" alt="" class="project__content__img">
+                              <div class="project__content__container__image">
+                                <img src="./assets/img/project/software-developer.png" alt="" class="project__content__img">
+                                <div class="project__content__item__text">
+                                  <div class="project__content__text__container__header">
+                                    <h3 class="project__content__text__header">ICool</h3>
+                                  </div>
+                                  <div class="project__content__text__container__param">
+                                    <p class="project__content__text__param">
+                                      Đối tác, khách hàng quen thuộc nhất với chúng tôi
+                                      <a href="" class="project__content__link">Xem chi tiết</a>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="project__content__container__image">
+                                <img src="./assets/img/project/image 3.png" alt="" class="project__content__img">
+                                <div class="project__content__item__text">
+                                  <div class="project__content__text__container__header">
+                                    <h3 class="project__content__text__header">ICool</h3>
+                                  </div>
+                                  <div class="project__content__text__container__param">
+                                    <p class="project__content__text__param">
+                                      Đối tác, khách hàng quen thuộc nhất với chúng tôi
+                                      <a href="" class="project__content__link">Xem chi tiết</a>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -367,7 +477,7 @@
               <div class="team__rectangle"></div>
 
               <!-- Flickity HTML init -->
-              <div class="carousel">
+              <div class="carousel" data-flickity='{ "wrapAround": true }'>
                 <div class="carousel-cell cell1" data-selector=".cell1">
                   <div class="team__slider__item">
                     <div class="team__slider__container__img">
