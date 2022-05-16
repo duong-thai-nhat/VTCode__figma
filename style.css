@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6{
     top: -532px;
     border-radius: 50%;
     background: rgba(255, 221, 148, 0.11);
-    backdrop-filter: blur(60px);
+    filter: blur(50px);
     z-index: -1;
 }
 
@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6{
     top: 603px;
 
     background: linear-gradient(165.74deg, rgba(255, 186, 39, 0.17) 10.13%, rgba(255, 222, 152, 0.17) 86.62%);
-    filter: blur(254px);
+    filter: blur(160px);
     border-radius: 112px;
     z-index: -1;
 }
@@ -351,7 +351,8 @@ h1, h2, h3, h4, h5, h6{
     left: 0px;
     top: 326px;
     background: radial-gradient(50% 50% at 50% 50%, rgba(255, 176, 7, 0.25) 0%, rgba(255, 176, 7, 0) 100%);
-    filter: blur(254px);
+    filter: blur(145px);
+    /* opacity: 0.6; */
     z-index: -1;
 }
 
@@ -362,7 +363,7 @@ h1, h2, h3, h4, h5, h6{
     left: 1115px;
     top: -40px;
     background: radial-gradient(50% 50% at 50% 50%, rgba(7, 62, 255, 0.25) 0%, rgba(7, 77, 255, 0) 100%);
-    filter: blur(254px);
+    filter: blur(154px);
     z-index: -1;
 }
 
@@ -528,9 +529,29 @@ h1, h2, h3, h4, h5, h6{
     border-radius: 4.8px;
 }
 
+.project__curve__left{
+    position: absolute;
+    width: 86.65px;
+    height: 29px;
+    left: 16%;
+    top: 27%;
+}
+
+.project__curve__right{
+    position: absolute;
+    width: 86.65px;
+    height: 29px;
+    right: 14%;
+    top: 50%;
+}
+
 /* team */
 #team{
     background: rgba(19, 125, 183, 0.07);
+}
+
+.team__wrap{
+    position: relative;
 }
 
 .team__slider__item{
@@ -635,6 +656,40 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
+.team__rectangle__left{
+    position: absolute;
+    width: 715px;
+    height: 715px;
+    left: -141px;
+    bottom: -30%;
+
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 176, 7, 0.25) 0%, rgba(255, 176, 7, 0) 100%);
+    filter: blur(200px);
+}
+
+.team__rectangle__right{
+    position: absolute;
+    width: 715px;
+    height: 715px;
+    right: -15%;
+    top: -35%;
+
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 176, 7, 0.25) 0%, rgba(255, 176, 7, 0) 100%);
+    filter: blur(154px);
+}
+
+.team__rectangle__item{
+    position: absolute;
+    width: 280px;
+    height: 270px;
+    right: 12%;
+    top: 60%;
+
+    background: linear-gradient(180deg, #C1FFF4 0%, rgba(193, 255, 244, 0) 100%);
+    filter: blur(5px);
+    border-radius: 50%;
+}
+
 /* Heading card */
 /* #team .carousel-cell:nth-child(2n+1) .team__slider__content__card{
     margin-left: 50px;
@@ -658,6 +713,17 @@ h1, h2, h3, h4, h5, h6{
 
 #team .flickity-button{
     transform: translateY(-100px);
+}
+
+.contact__rectangle__left{
+    position: absolute;
+    width: 715px;
+    height: 715px;
+    left: -39px;
+    top: 3924px;
+
+    background: radial-gradient(50% 50% at 50% 50%, rgba(37, 216, 255, 0.2) 0%, rgba(0, 255, 255, 0) 100%);
+    filter: blur(54px);
 }
 
 /* // team */
@@ -788,6 +854,29 @@ h1, h2, h3, h4, h5, h6{
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(114px);
     padding: 56px 0 107px;
+    overflow: hidden;
+}
+
+.footer__rectangle__left{
+    position: absolute;
+    width: 869px;
+    height: 858.57px;
+    left: -375px;
+    top: 102.75px;
+
+    background: radial-gradient(54.43% 54.43% at 50% 50%, rgba(255, 176, 7, 0.2) 0%, rgba(255, 176, 7, 0) 100%);
+    filter: blur(215px);
+}
+
+.footer__rectangle__right{
+    position: absolute;
+    width: 397px;
+    height: 392.24px;
+    left: 259px;
+    top: 127.45px;
+
+    background: linear-gradient(159.49deg, rgba(208, 227, 255, 0) 12.55%, rgba(0, 102, 255, 0.294) 114.68%);
+    filter: blur(225px);
 }
 
 .footer__follow__us__social{
